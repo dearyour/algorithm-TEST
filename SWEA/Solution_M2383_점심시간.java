@@ -125,8 +125,8 @@ public class Solution_M2383_점심시간 {
 					p.status =W;
 				}else if(p.status == W && ingCnt<3) {
 				p.status=D;
-				p.downCnt=1; //계단 1부터 추랄
-			++ingCnt;
+				p.downCnt=1; //계단 1부터 출발
+					++ingCnt;
 				}else if(p.status ==D) {
 					if(p.downCnt < height) { // 다 내려가지 못한사람
 						p.downCnt++;
